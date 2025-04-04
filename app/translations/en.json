@@ -1,0 +1,8 @@
+{
+  "app": {
+    "name": "Smart Links",
+    "short_description": "Link to external applications using dynamic URLs populated with Zendesk context",
+    "long_description": "Play the famous zen tunes in your help desk and \n listen to the beats it has to offer.",
+    "installation_instructions": "Simply click install."
+  }
+}
