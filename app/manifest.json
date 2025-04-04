@@ -1,0 +1,25 @@
+{
+  "name": "Smart Links",
+  "author": {
+    "name": "Hubbub Studios",
+    "email": "taylor@hubbub.dev",
+    "url": "https://github.com/hubbubdev/zendesk-smart-links-docs"
+  },
+  "defaultLocale": "en",
+  "private": false,
+  "location": {
+    "support": {
+      "ticket_sidebar": {
+        "url": "https://smart-links.hubbub.dev/location/sidebar",
+        "flexible": true
+      },
+      "nav_bar": {
+        "url": "https://smart-links.hubbub.dev/location/navbar",
+        "role_restriction": "admin",
+        "flexible": true
+      }
+    }
+  },
+  "version": "1.0.0",
+  "frameworkVersion": "2.0"
+}
