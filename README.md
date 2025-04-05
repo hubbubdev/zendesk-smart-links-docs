@@ -1,12 +1,28 @@
 # Smart Links (Zendesk App)
 
-Give your agents easy access to external tools through the Smart Links application for the Zendesk agent workspace.
+Give your agents easy access to external tools through the Smart Links application for the Zendesk agent workspace to increase their efficiency and effectiveness.
 
-You can leverage Zendesk data from the current ticket, user, customer, or custom fields to formulate dynamic URLs, making it seamless for agents to get where they need to go.
+You can leverage Zendesk data about the current ticket, user, customer, or from custom fields to formulate dynamic URLs, making it seamless for agents to get where they need to go.
+
+![screenshot-0](https://github.com/user-attachments/assets/3ad685af-dbec-43d8-b950-b6b96b0375f2)
+![screenshot 1](https://github.com/user-attachments/assets/7514e320-eb67-48ee-9690-97bbdb2be13e)
+![screenshot 2](https://github.com/user-attachments/assets/e4ec80ec-0b77-4edd-ae35-bb1df03f6118)
 
 ## Getting Started
 
-Navigate to the
+Navigate to the Admin panel via the lefthand sidebar (only accessible to users with the `admin` role).
+
+![image](https://github.com/user-attachments/assets/df1a9ba4-8294-4841-82f8-fc60a429b0fe)
+
+Click **Add Link** and enter a label for the link (that will be shown to your agents)
+
+When entering the URL, you can specify variables from the Zendesk instance using double curly braces such as `{{ticket.id}}` 
+
+The **Insert Variable** button will also help you easily add common variables that you might want to use, however you are not limited to this list.
+
+![image](https://github.com/user-attachments/assets/180e7fa9-c6f8-420c-9714-784b71badd63)
+
+To use variables not listed, the [Zendesk API Reference > Ticket Sidebar](https://developer.zendesk.com/api-reference/apps/apps-support-api/ticket_sidebar/#ticket-object) can help you determine how to reference a field via Zendesk's dot notation (eg. `ticket.assignee.user.email`)
 
 ## Example Variables
 
@@ -62,6 +78,22 @@ You can use the following variables in your link templates:
 
 However, you can reference any data available to the Zendesk Application Framework in the Ticket Sidebar location. For more details, see the [Zendesk API Reference](https://developer.zendesk.com/api-reference/apps/apps-support-api/ticket_sidebar/)
 
+## Referencing Custom Fields
+
+To reference the value of a custom field in a Smart Link, we will enter our template string in this syntax:
+`{{ticket.customField:custom_field_<field_id>}}`
+
+To determine the `field_id` to use, you'll need to navigate to the **Zendesk Admin Center > Objects and rules > Tickets > Fields**
+
+Here you can view and create new fields. To reference them via a Smart Link, copy the value of the `Field ID` column, and we'll use that in our smart link like so: `{{ticket.customField:custom_field_35588134477723}}`
+
+![image](https://github.com/user-attachments/assets/1ff26ecc-eee3-4160-bc1f-97986929ac03)
+
 ## Pricing
 
 Get started for Free with 2 dynamic links! Unlock unlimited links with our paid plan
+
+
+
+
+
