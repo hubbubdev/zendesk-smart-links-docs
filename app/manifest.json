@@ -11,16 +11,19 @@
     "support": {
       "ticket_sidebar": {
         "url": "https://smart-links.hubbub.dev/location/sidebar",
-        "flexible": true
+        "flexible": true,
+        "signed": true
       },
       "nav_bar": {
         "url": "https://smart-links.hubbub.dev/location/navbar",
         "role_restriction": "admin",
-        "flexible": true
+        "flexible": true,
+        "signed": true
       }
     }
   },
   "version": "1.0.0",
   "frameworkVersion": "2.0",
-  "gaID": "G-0LNBMVBFPB"
+  "gaID": "G-0LNBMVBFPB",
+  "termsConditionsURL": "https://smart-links.hubbub.dev/terms"
 }
