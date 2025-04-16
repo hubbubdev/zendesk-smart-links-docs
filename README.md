@@ -93,7 +93,12 @@ Here you can view and create new fields. To reference them via a Smart Link, cop
 
 Get started for Free with 2 dynamic links! Unlock unlimited links with our paid plan
 
+Navigate to **Admin Center > Apps and integrations > Zendesk Support Apps**
 
+Click the cog icon and **Change settings**
 
+<img width="288" alt="Smart Link app settings" src="https://github.com/user-attachments/assets/aaa3932a-9cba-4939-ac7f-e79b3548cb76" />
+
+Select the Pro plan, and enter your billing details
 
 
